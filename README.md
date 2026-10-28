@@ -1,1 +1,1 @@
-# Tartu-tanavakuntsi-veebileht
+# Tartu-tanavakunsti-veebileht
