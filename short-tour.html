@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lühike tuur (~4 km) - Tartu Tänavakunsti Teejuht</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ainult päise (header) sisu keskele */
+        header {
+            text-align: center;
+        }
+
+        /* Pikemate tekstide ja piltide paigutus */
+        .content-with-space {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .text-column {
+            flex: 1;
+        }
+
+        .image-placeholder {
+            width: 300px;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            flex-shrink: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lühike tuur (~4 km)</h1>
+        <p>Tutvu Tartu kesklinna ja Emajõe äärse tänavakunstiga.</p>
+    </header>
+
+    <main>
+        <section class="tour-details">
+            <div class="content-with-space">
+                <div class="text-column">
+                    <p>Mõnus jalutuskäik läbi Tartu kesklinna ja mööda Emajõe kallast. Teekonnal saad avastada Kaarsilla ja Vabadussilla tänavakunstigaleriisid, nautida jõevaateid ning külastada botaanikaaia ümbrust. Marsruut väldib järske tõuse ja kulgeb peamiselt tasastel kõnniteedel.</p> 
+
+                    <p>Ideaalne valik neile, kes soovivad nautida Tartu tänavakunsti rahulikus tempos! <strong>Täielikult ratastooli- ja lapsevankrisõbralik</strong> (tasane maapind, head kõnniteed).</p>
+                    
+                    <div>
+                        <a href="index.html" class="btn back-link">&larr; Tagasi avalehele</a>
+                    </div>
+                </div>
+                <!-- Siia paremale saad lisada tuuri kaardi või pildi, nt <img src="short-tour-map.jpg" alt="..."> -->
+                <div class="image-placeholder">Siia pilt / kaart</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tartu Tänavakunsti Teejuht</p>
+    </footer>
+
+</body>
+</html>
