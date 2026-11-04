@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tartu Tänavakunsti Teejuht</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ainult päise (header) sisu keskele */
+        header {
+            text-align: center;
+        }
+
+        /* Pikemate tekstide ja piltide paigutus */
+        .content-with-space {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .text-column {
+            flex: 1;
+        }
+
+        .image-placeholder {
+            width: 300px;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            flex-shrink: 0;
+        }
+
+        /* Stiil lingile, et see sobiks tekstiga hästi kokku */
+        .tour-link {
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,7 +52,14 @@
     <main>
         <section class="intro">
             <h2>Mis on Tartu tänavakunst?</h2>
-            <p>TARTU TÄNAVAKUNSTIST INFO, NÄITED JNE</p>
+            <div class="content-with-space">
+                <div class="text-column">
+                    <p>Tartu on tuntud kui Eesti tänavakunsti pealinn. Linna seintelt võib leida suuri seinamaalinguid, grafiteid, šabloonpilte ja värvikaid kujutisi. Tänavakunst muudab linnaruumi põnevamaks ning jutustab lugusid kunstnike mõtetest ja Tartu kultuurist.</p>
+
+                    <p>Tartu tänavakunsti arengule on palju kaasa aidanud 2010. aastal alguse saanud tänavakunstifestival Stencibility, mis toob kokku Eesti ja välismaa kunstnikke.</p>
+                </div>
+                <div class="image-placeholder">Siia pilt (Intro)</div>
+            </div>
         </section>
 
         <section class="tours">
@@ -24,14 +67,34 @@
             
             <div class="tour-card">
                 <h3>Lühike tuur (~4 km)</h3>
-                <p>Mõnus jalutuskäik kesklinnas. <strong>Täielikult ratastooli- ja lapsevankrisõbralik</strong> (tasane maapind, head kõnniteed).</p>
-                <a href="short-tour.html" class="btn">Vaata lühikest tuuri</a>
+                <div class="content-with-space">
+                    <div class="text-column">
+                        <p>Mõnus jalutuskäik läbi Tartu kesklinna ja mööda Emajõe kallast. Teekonnal saad avastada Kaarsilla ja Vabadussilla tänavakunstigaleriisid, nautida jõevaateid ning külastada botaanikaaia ümbrust. Marsruut väldib järske tõuse ja kulgeb peamiselt tasastel kõnniteedel.</p> 
+
+                        <p>Ideaalne valik neile, kes soovivad nautida Tartu tänavakunsti rahulikus tempos! <strong>Täielikult ratastooli- ja lapsevankrisõbralik</strong> (tasane maapind, head kõnniteed).</p>
+                        
+                        <!-- Link on nüüd täpselt teksti sees (seal kus oli punane joon) -->
+                        <div>
+                            <a href="short-tour.html" class="btn tour-link">Vaata lühikest tuuri</a>
+                        </div>
+                    </div>
+                    <div class="image-placeholder">Siia pilt (Lühike tuur)</div>
+                </div>
             </div>
 
             <div class="tour-card">
                 <h3>Pikk tuur (~10 km)</h3>
-                <p>LÜHIKE SELGITUS</p>
-                <a href="long-tour.html" class="btn">Vaata pikka tuuri</a>
+                <div class="content-with-space">
+                    <div class="text-column">
+                        <p>Põhjalikum avastusretk, mis viib kesklinnast kaugemale. Näed suuri seinamaalinguid, põnevaid grafiteid ja peidetud kunstiteoseid ning avastad Tartu omanäolisi linnaosi, näiteks Karlovat ja Supilinna.</p>
+                        
+                        <!-- Link on samamoodi tõstetud teksti alla -->
+                        <div>
+                            <a href="long-tour.html" class="btn tour-link">Vaata pikka tuuri</a>
+                        </div>
+                    </div>
+                    <div class="image-placeholder">Siia pilt (Pikk tuur)</div>
+                </div>
             </div>
         </section>
     </main>
