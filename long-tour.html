@@ -6,9 +6,24 @@
     <title>Pikk tuur (~10 km) - Tartu Tänavakunsti Teejuht</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Ainult päise (header) sisu keskele */
         header {
             text-align: center;
         }
+
+        /* Pikemate tekstide ja piltide paigutus */
+        .content-with-space {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .text-column {
+            flex: 1;
+        }
+
         .image-placeholder {
             width: 100%;
             max-width: 800px;
@@ -33,14 +48,25 @@
 
     <header>
         <h1>Pikk tuur (~10 km)</h1>
+    <p>Tutvu Tartu seinamaalingutega kõndides läbi Supilinna, Vaksali ja Karlova.</p>
     </header>
 
     <main>
-        <div class="image-placeholder">Siia pilt / kaart</div>
+        <section class="tour-details">
+            <div class="content-with-space">
+                <div class="text-column">
+                    <p>Põhjalikum avastusretk, mis viib kesklinnast kaugemale. Näed suuri seinamaalinguid, põnevaid grafiteid ja peidetud kunstiteoseid ning avastad Tartu omanäolisi linnaosi</p> 
 
-        <div style="text-align: center;">
-            <a href="index.html" class="btn back-link">&larr; Tagasi avalehele</a>
-        </div>
+                    <p>Ideaalne valik neile, kes soovivad nautida Tartu tänavakunsti rahulikus tempos.</p>
+                    
+                    <div>
+                        <a href="index.html" class="btn back-link">&larr; Tagasi avalehele</a>
+                    </div>
+                </div>
+                <!-- Siia paremale saad lisada tuuri kaardi või pildi, nt <img src="short-tour-map.jpg" alt="..."> -->
+                <div class="image-placeholder">Siia pilt / kaart</div>
+            </div>
+        </section>
     </main>
 
     <footer>
