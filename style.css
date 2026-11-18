@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Rubik+Spray+Paint&display=swap');
+.rubik-spray-paint-regular {
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
     color:saddlebrown;
     font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Rubik Spray Paint,
     text-align: center;
 }
 h2 {
