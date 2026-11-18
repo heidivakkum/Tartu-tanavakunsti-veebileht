@@ -1,31 +1,75 @@
-@import url(https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap");
-.rubik-spray-paint-regular {
-  font-family: "Rubik Spray Paint", system-ui;
+@import url('https://fonts.googleapis.com/css2?family=Plaster&family=Signika+Negative:wght@300..700&family=Sirin+Stencil&display=swap');
+Plaster: CSS class
+
+.plaster-regular {
+  font-family: "Plaster", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
+.sirin-stencil-regular {
+  font-family: "Sirin Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.signika-negative-<uniquifier> {
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 h1 {
-    color:saddlebrown;
-    font-size: 40px;
-    font-family: "Rubik Spray Paint"
+    color:#FFC0CB;
+    font-size: 50px;
+    font-family: "Plaster", system-ui;
     text-align: center;
 }
 h2 {
-    color:saddlebrown;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#FF8243;
+    font-family: "Plaster", system-ui;
     font-size: 30px;
     text-align:left;
 }
 h3 {
-    color:saddlebrown;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    color:#069494;
+    font-family: "Sirin Stencil", sans-serif;
+    font-size: 25px;
     text-align:left;
 }
 p{
-    color:black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FCE883;
+    font-family: "Signika Negative", sans-serif;
     font-size: 20px;
     text-align:left;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(190, 46, 108);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(136, 47, 85);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(143, 36, 82);
+}
+
+body {
+
+  background-image: url("bg.png");
+  
+  background-repeat: repeat;
+
 }
